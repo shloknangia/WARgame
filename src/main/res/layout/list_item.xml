@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:background="@android:color/darker_gray"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+
+        <FrameLayout
+            android:background="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_margin="1dp"
+                android:padding="5dp"
+                android:background="#99E2E8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:src="@drawable/king1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_marginTop="20dp"
+                    android:text="KING"
+                    android:textSize="9pt"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+                <View
+                    android:id="@+id/view"
+                    android:layout_below="@id/profile_pic"
+                    android:layout_width="match_parent"
+                    android:background="#A9A9A9"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_below="@id/view"
+                    android:text="Highest Rating:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/battle_strength"
+                    android:layout_below="@id/view"
+                    android:layout_alignParentEnd="true"
+                    android:text="Battle Strength:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
